@@ -17,12 +17,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWl-os-bbg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cQ5-PA-GBa">
+                                        <rect key="frame" x="48" y="200" width="318" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cQ5-PA-GBa" firstAttribute="leading" secondItem="oWl-os-bbg" secondAttribute="leading" constant="50" id="DE0-qs-CeQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="cQ5-PA-GBa" secondAttribute="trailing" constant="50" id="FF4-Op-ZKW"/>
+                                    <constraint firstItem="cQ5-PA-GBa" firstAttribute="top" secondItem="oWl-os-bbg" secondAttribute="top" constant="200" id="f6m-DF-GHI"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="oWl-os-bbg" firstAttribute="bottom" secondItem="dpq-mG-fQq" secondAttribute="bottom" id="51K-e4-gGb"/>
                             <constraint firstItem="oWl-os-bbg" firstAttribute="top" secondItem="dpq-mG-fQq" secondAttribute="top" id="BKy-nF-EpF"/>
-                            <constraint firstItem="oWl-os-bbg" firstAttribute="bottom" secondItem="dpq-mG-fQq" secondAttribute="bottom" id="II4-Gc-Tw7"/>
                             <constraint firstItem="oWl-os-bbg" firstAttribute="leading" secondItem="dpq-mG-fQq" secondAttribute="leading" id="Vzh-T9-kQE"/>
                             <constraint firstItem="oWl-os-bbg" firstAttribute="trailing" secondItem="dpq-mG-fQq" secondAttribute="trailing" id="fE1-Cv-0Cz"/>
                         </constraints>
